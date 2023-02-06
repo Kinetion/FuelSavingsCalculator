@@ -4,35 +4,69 @@ html, body{
     height: 100%;
     display: block;
     margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .sevenSegment {
     font-family: 'Courier New', monospace;
     font-weight: bold;
     font-size: 1.5em;
-    background-color: #5EC176;
-    
-    margin: 1.5em;
+    background-color: #5eb973;
+    text-shadow: 0px 0px 5px #e5ffe5;
+    text-shadow: -1px 0 2#ffffff, 0 1px 2 #ffffff, 1px 0 2 #ffffff, 0 -1px 2 #ffffff;
+    margin: 0.5em;
     width: 10em;
     max-width: 10em;
     text-align: right;
 }
 
+.displayRow {
+    display:inline-block;
+}
+
+.mainParagraph {
+    padding-left: 3em;
+    padding-right: 3em;
+    font-size: 1.1em;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
 #pageContainer{
     display: block;
-    max-width: 600px;
-    height: 100%;
+    width: 600px;
     background-color: #5EC176;
+    bottom:0;
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    min-height: fit-content;
+    overflow: scroll;
+    box-shadow: 0 3px 10px #00000088;
 }
 
 #petrolPump {
     background-color: #F0F5FA;
     height:100%;
-    margin: 2em;
+    
+}
+
+h1 {
+    display:inline-block;
+    padding: 0.75em;
 }
 
 #logo{
-    width:200px;
-    height:200px;
+    width:150px;
+    height:150px;
     float: right;
+    border-radius: 25%;
+    padding: 1em;
+}
+
+footer {
+    font-size: small;
+    position:fixed;
+    bottom:0;
+    padding:1em;
 }
