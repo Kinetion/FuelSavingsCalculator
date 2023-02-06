@@ -1,10 +1,10 @@
 @font-face {
     font-family: "DSEG_v046";
-    src: url("/fonts/DSEG7Classic-BoldItalic.ttf");
-    src: url("/fonts/DSEG7Classic-BoldItalic.ttf") format('embedded-opentype'),
-        url("/fonts/DSEG7Classic-BoldItalic.ttf") format('woff2'),
-        url("/fonts/DSEG7Classic-BoldItalic.ttf") format('woff'),
-        url("/fonts/DSEG7Classic-BoldItalic.ttf") format('truetype');
+    src: url("https://kinetion.dev/FuelSavingsCalculator/fonts/DSEG7Classic-BoldItalic.ttf");
+    src: url("https://kinetion.dev/FuelSavingsCalculator/fonts/DSEG7Classic-BoldItalic.ttf") format('embedded-opentype'),
+        url("https://kinetion.dev/FuelSavingsCalculator/fonts/DSEG7Classic-BoldItalic.ttf") format('woff2'),
+        url("https://kinetion.dev/FuelSavingsCalculator/fonts/DSEG7Classic-BoldItalic.ttf") format('woff'),
+        url("https://kinetion.dev/FuelSavingsCalculator/fonts/DSEG7Classic-BoldItalic.ttf") format('truetype');
 }
 
 * { padding: 0; margin: auto; }
