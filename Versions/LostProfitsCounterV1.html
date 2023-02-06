@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		td {
+			background-color: #CCCCFF;
+		}
+		div, p {
+			display: inline;
+		}
+		div {
+			font-size: 30px;
+			font-weight: bold;
+			display: inline-block;
+			vertical-align: middle;
+		}
+		</style>
+	</head>
+	
+	<body>
+		<h3>Lost Profits</h3>
+		<table>
+			<td>
+				<p>Since January 2023 we have already lost out on
+				<div id="moneyCounter">Javascript required</div>
+				of potential Profits</p>
+				<br>
+			</td>
+
+			<td>
+				<p>How many Vehicles are you running?</p><br>
+				<input type="text" id="noOfVehicles" value="1000">
+			</td>
+		</table>
+		<p>we can take action to stop this ineficiency!</p>
+		
+		<script>
+			const moneyCounterDOM = document.getElementById('moneyCounter');
+			const vehcilesCountDOM = document.getElementById('noOfVehicles');
+			let totalCost = 4.5454325432;
+			let numberOfVehciles = 0;
+			let VehicleCostPerMin = (((2500/365)/24)/60);
+
+			vehicleInput();
+			updateMoneyDisplay();
+
+			vehcilesCountDOM.addEventListener("input", vehicleInput);
+
+			function vehicleInput(){
+				let vehicleNumberInput = vehcilesCountDOM.value;
+				if (!isNaN(+vehicleNumberInput) && Number.isInteger(+vehicleNumberInput)){
+					numberOfVehciles = +vehicleNumberInput;
+				}
+				vehcilesCountDOM.value = numberOfVehciles;
+			}
+			
+			function updateTotalCost(){
+				let milisecconds = Date.now() - 1672531200000;
+				totalCost = ((milisecconds/1000)/60) * (VehicleCostPerMin * numberOfVehciles);
+				updateMoneyDisplay();
+				window.requestAnimationFrame(updateTotalCost);
+			}
+
+			function updateMoneyDisplay(){
+				moneyCounterDOM.innerHTML = "$" + totalCost.toFixed(2);
+			}
+
+			window.requestAnimationFrame(updateTotalCost);
+		</script>
+	</body>
+</html> 

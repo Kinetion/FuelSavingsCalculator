@@ -1,0 +1,40 @@
+@font-face {
+    font-family: "DSEG_v046";
+    src: url("/fonts/DSEG7Classic-BoldItalic.ttf");
+    src: url("/fonts/DSEG7Classic-BoldItalic.ttf") format('embedded-opentype'),
+        url("/fonts/DSEG7Classic-BoldItalic.ttf") format('woff2'),
+        url("/fonts/DSEG7Classic-BoldItalic.ttf") format('woff'),
+        url("/fonts/DSEG7Classic-BoldItalic.ttf") format('truetype');
+}
+
+* { padding: 0; margin: auto; }
+
+html, body{
+    height: 100%;
+    display: block;
+    margin: 0%;
+}
+
+.sevenSegment {
+    font-family: "DSEG_v046";
+    font-size: 1.5em;
+    background-color: #5EC176;
+    
+    margin: 1.5em;
+    width: 10em;
+    max-width: 10em;
+    text-align: right;
+}
+
+#pageContainer{
+    display: block;
+    max-width: 600px;
+    height: 100%;
+    background-color: #5EC176;
+}
+
+#petrolPump {
+    background-color: #F0F5FA;
+    height:100%;
+    margin: 2em;
+}
