@@ -31,6 +31,10 @@ html, body{
     float: right;
 }
 
+.hidden{
+    color: #F0F5FA;
+}
+
 p {
     font-size: small;
 }
