@@ -11,7 +11,7 @@ vehcilesCountDOM.addEventListener("input", vehicleInput);
 
 function vehicleInput(){
     let vehicleNumberInput = vehcilesCountDOM.value;
-    if (!isNaN(+vehicleNumberInput) && Number.isInteger(+vehicleNumberInput)){
+    if (!isNaN(+vehicleNumberInput) && isInt(+vehicleNumberInput)){
         numberOfVehciles = +vehicleNumberInput;
     }
     vehcilesCountDOM.value = numberOfVehciles;
@@ -26,6 +26,10 @@ function updateTotalCost(){
 
 function updateMoneyDisplay(){
     moneyCounterDOM.value = totalCost.toFixed(2);
+}
+
+function isInt(value) {
+    return !isNaN(value) && (function(x) { return (x | 0) === x; })(parseFloat(value))
 }
 
 window.requestAnimationFrame(updateTotalCost);
