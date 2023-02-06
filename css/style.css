@@ -24,6 +24,10 @@ html, body{
     border-left: 1em;
 }
 
+.spacer{
+    margin-left: 45px;
+}
+
 .smallSegment{
     margin-right: 0.5em;
     margin-left: 0.5em;
