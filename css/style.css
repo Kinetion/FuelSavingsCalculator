@@ -32,7 +32,7 @@ html, body{
     text-justify: inter-word;
 }
 
-#pageContainer{
+#petrolPump{
     display: block;
     width: 600px;
     background-color: #5EC176;
@@ -43,12 +43,7 @@ html, body{
     min-height: fit-content;
     overflow: scroll;
     box-shadow: 0 3px 10px #00000088;
-}
-
-#petrolPump {
     background-color: #F0F5FA;
-    height:100%;
-    
 }
 
 h1 {
@@ -66,7 +61,7 @@ h1 {
 
 footer {
     font-size: small;
-    position:fixed;
+    position: fixed;
     bottom:0;
     padding:1em;
 }
