@@ -28,12 +28,16 @@ function updateTotalCost(){
 }
 
 function updateMoneyDisplay(){
-    moneyCounterDOM.value = totalCost.toFixed(2);
-    gallonsCounterDOM.value = totalGallons.toFixed(3);
+    moneyCounterDOM.value = numberWithCommas(totalCost.toFixed(2));
+    gallonsCounterDOM.value = numberWithCommas(totalGallons.toFixed(3));
 }
 
 function isInt(value) {
     return !isNaN(value) && (function(x) { return (x | 0) === x; })(parseFloat(value))
+}
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
 window.requestAnimationFrame(updateTotalCost);
